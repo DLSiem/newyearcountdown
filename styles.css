@@ -1,0 +1,105 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --Grayish-blue: hsl(237, 18%, 59%);
+}
+
+body {
+  background-image: url(/images/pattern-hills.svg), url(/images/bg-stars.svg),
+    linear-gradient(to bottom, var(--Very-dark-blue), rgb(35, 28, 43));
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+  font-family: "Red Hat Text", sans-serif;
+}
+.container {
+  display: flex;
+  color: aliceblue;
+}
+.heading {
+  font-weight: 700;
+  word-spacing: 0.6rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+.main-body {
+  font-family: "Red Hat Text", sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 45rem;
+}
+
+.counter h1 {
+  text-align: center;
+  color: var(--Soft-red);
+  font-size: 6rem;
+}
+.counter p {
+  color: #c6c3ef;
+  font-weight: 500;
+
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+footer {
+  position: absolute;
+  display: flex;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer > div {
+  padding: 1rem;
+}
+footer svg {
+  fill: #8385a9;
+  transition: fill 0.2s ease-in-out;
+}
+
+footer svg:hover {
+  fill: var(--Soft-red);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .main-body {
+    width: 32rem;
+  }
+  .counter h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-position-x: 83%;
+  }
+  .heading {
+    word-spacing: normal;
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .main-body {
+    width: 20rem;
+  }
+  .counter p {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+  .counter h1 {
+    font-size: 3rem;
+  }
+}
