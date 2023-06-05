@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(/images/pattern-hills.svg), url(/images/bg-stars.svg),
+  background-image: url(images/pattern-hills.svg), url(images/bg-stars.svg),
     linear-gradient(to bottom, var(--Very-dark-blue), rgb(35, 28, 43));
   background-repeat: no-repeat;
   background-position: bottom;
