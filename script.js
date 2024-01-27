@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // code goes here
   setInterval(function () {
-    let lunchTime = new Date(2024, 0, 01, 00, 00, 00).getTime();
+    let lunchTime = new Date(2025, 0, 1, 0, 0, 0).getTime();
     let now = new Date().getTime();
 
     let distance = lunchTime - now;
