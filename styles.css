@@ -16,8 +16,9 @@ body {
   font-family: "Red Hat Text", sans-serif;
 }
 .container {
-  display: flex;
   color: aliceblue;
+
+  min-height: 100vh;
 }
 .heading {
   font-weight: 700;
@@ -32,11 +33,11 @@ body {
 
 .main-body {
   font-family: "Red Hat Text", sans-serif;
-  position: absolute;
-  top: 20%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   width: 45rem;
+  margin-top: 4rem;
 }
 
 .counter h1 {
@@ -53,11 +54,17 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.space {
+  min-height: 100vh;
+}
+
 footer {
   position: absolute;
   display: flex;
   bottom: 3rem;
   left: 50%;
+
   transform: translateX(-50%);
 }
 footer > div {
@@ -102,4 +109,27 @@ footer svg:hover {
   .counter h1 {
     font-size: 2.6rem;
   }
+}
+
+.container-main {
+  min-height: 100vh;
+}
+
+.new {
+  text-align: center;
+}
+
+.new h1 {
+  font-size: 4rem;
+  color: tomato;
+}
+
+.new p {
+  font-size: 4rem;
+}
+
+.new h2 {
+  font-size: 3rem;
+  color: rgb(255, 181, 44);
+  font-weight: 700;
 }

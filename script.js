@@ -18,7 +18,9 @@ $(document).ready(function () {
     $(".seconds").html(seconds);
     if (distance < 0) {
       $(".main-body").empty();
-      $(".main-body").append('<div class="new"><h1>Launched</h1></div>');
+      $(".main-body").append(
+        '<div class="new"><h1>Happy New Year!</h1><p>🥳🥳🥳🥳🥳</p><h2>2025</h2></div>'
+      );
     }
   }, 1000);
 });
